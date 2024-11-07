@@ -1,0 +1,400 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software de facturación">
+  <title>Tienda de Software</title>
+  <link rel="shortcut icon" href="../assets/img/AR-RESOURCES CROMO.png" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/maicons.css">
+  <link rel="stylesheet" href="../assets/vendor/animate/animate.css">
+  <link rel="stylesheet" href="../assets/vendor/owl-carousel/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/mobster.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <style>
+    /* Estilos adicionales */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #e9e9e9;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      color: #000000;
+    }
+
+    .navbar {
+      background-color: #000000;
+      margin-bottom: 20px; /* Espacio debajo del menú */
+      padding: 10px 0; /* Espacio dentro del menú */
+    }
+
+    .navbar-brand img {
+      width: 150px;
+    }
+
+    .pricing-section {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .product-card {
+      flex: 1;
+      max-width: 350px;
+      border: 1px solid #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      margin: 15px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-card h5 {
+      margin: 15px 0;
+      font-size: 1.2em;
+      color: #240238;
+      font-weight: bold;
+    }
+
+    .product-card p {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .price {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 18px;
+      color: white;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border-radius: 8px;
+    }
+
+    .message-container {
+      font-size: 1.2em;
+      font-weight: bold;
+      text-align: center;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 20px;
+      background-color: #28a745;
+      color: rgb(255, 255, 255);
+      border-radius: 10px;
+      display: none;
+      z-index: 1000;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      animation: fadeIn 0.5s forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .message-container i {
+      margin-right: 15px;
+      font-size: 1.5em;
+    }
+
+    .required::after {
+      content: " *";
+      color: red;
+    }
+
+    .alert {
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .is-invalid {
+      border-color: red;
+    }
+
+    .check-icon {
+      color: #fff;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">
+        <img src="../assets/img/AR-RESOURCES CROMO.png" alt="Logo">
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+          <li class="nav-item active"><a class="nav-link" href="shop.html">Tienda</a></li>
+          <li class="nav-item">
+            <a style="color: aliceblue;" class="nav-link" href="https://facebook.com/profile.php?id=61567447193713"><span class="mai-logo-facebook"></span></a>
+          </li>
+          <li class="nav-item">
+            <a style="color: aliceblue;" class="nav-link" href="https://www.instagram.com/accontify_resources/profilecard/?igsh=MWwzeGtqc2VjZ3kwMg=="><span class="mai-logo-instagram"></span></a>
+          </li>
+          <li class="nav-item">
+            <a style="color: aliceblue;" class="nav-link" href="#"><span class="mai-logo-google"></span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Productos -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4">Compra nuestros software de facturación</h1>
+    <div class="pricing-section">
+      <!-- Producto 1 -->
+      <div class="product-card">
+        <img src="../assets/img/6.png" alt="Software de Facturación Web" class="product-image">
+        <h5>Software de Facturación Web</h5>
+        <p class="price">$1,288.00</p>
+        <p>Accede a nuestro software de facturación en la nube desde cualquier lugar. Ideal para pequeñas y medianas empresas.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#demoModal" data-product="Software de Facturación Web" data-price="$1,288.00">Solicitar Demo</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card">
+        <img src="../assets/img/01.png" alt="Software de Facturación de Escritorio" class="product-image">
+        <h5>Software de Facturación de Escritorio</h5>
+        <p class="price">$1,000.00</p>
+        <p>Software de facturación para instalar en tu PC, fácil y rápido de usar. Ideal para quienes prefieren trabajar sin conexión.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#demoModal" data-product="Software de Facturación de Escritorio" data-price="$1,000.00">Solicitar Demo</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="product-card">
+        <img src="../assets/img/Movil.png" alt="Software de Facturación Móvil" class="product-image">
+        <h5>Software de Facturación Móvil</h5>
+        <p class="price">$900.00</p>
+        <p>Controla tus facturas desde tu dispositivo móvil. Ideal para quienes están siempre en movimiento.</p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#demoModal" data-product="Software de Facturación Móvil" data-price="$900.00">Solicitar Demo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal para Solicitar Demo -->
+  <div class="modal fade" id="demoModal" tabindex="-1" aria-labelledby="demoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="demoModalLabel">Solicitar Demo</h5>
+          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <h5>Producto: <span id="product-name"></span></h5>
+          <p>Precio: <span id="product-price"></span></p>
+          <p>Por favor, ingresa tus datos para agendar una demostración:</p>
+
+          <!-- Formulario para Demo -->
+          <form id="demo-form">
+            <div class="form-group">
+              <label for="name" class="required">Nombre Completo</label>
+              <input type="text" id="name" class="form-control" required placeholder="Tu nombre completo">
+            </div>
+            <div class="form-group">
+              <label for="email" class="required">Correo Electrónico</label>
+              <input type="email" id="email" class="form-control" required placeholder="Tu correo electrónico">
+            </div>
+            <div class="form-group">
+              <label for="company" class="required">Nombre de la Empresa</label>
+              <input type="text" id="company" class="form-control" required placeholder="Tu empresa">
+            </div>
+            <div class="form-group">
+              <label for="comments">Comentarios</label>
+              <textarea id="comments" class="form-control" placeholder="Dejanos tus dudas o inquietudes"></textarea>
+            </div>
+          </form>
+
+          <!-- Mensaje de éxito o error -->
+          <div id="demo-message" class="alert d-none"></div>
+
+          <button class="btn btn-success" id="confirm-demo">Solicitar Demo</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor para el mensaje flotante con check de éxito -->
+  <div class="message-container" id="success-message">
+    <i class="fas fa-check-circle check-icon"></i> ¡Gracias por solicitar una demo! Nos pondremos en contacto contigo pronto.
+  </div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="../assets/vendor/wow/wow.min.js"></script>
+  <script src="../assets/js/mobster.js"></script>
+  <!-- Incluimos la librería de EmailJS -->
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
+    // Inicializamos EmailJS con tu usuario
+    emailjs.init("elianisai12096@gmail.com");
+
+    // Restablecer el formulario y los mensajes cada vez que se abre el modal
+    $('#demoModal').on('show.bs.modal', function () {
+      $('#demo-form')[0].reset();
+      $('#demo-message').addClass('d-none');
+      $('#demo-form input').removeClass('is-invalid');
+      $('#success-message').hide();
+    });
+
+    // Actualizar los detalles del producto en el modal de la demo
+    $('#demoModal').on('show.bs.modal', function (event) {
+      var button = $(event.relatedTarget); // Botón que activó el modal
+      var productName = button.data('product'); // Nombre del producto
+      var productPrice = button.data('price'); // Precio del producto
+
+      var modal = $(this);
+      modal.find('#product-name').text(productName);
+      modal.find('#product-price').text(productPrice);
+    });
+
+    // Acción del botón para confirmar la solicitud de demo
+    $('#confirm-demo').click(function () {
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var company = $('#company').val();
+      var comments = $('#comments').val();
+      var productName = $('#product-name').text();
+      var productPrice = $('#product-price').text();
+
+      // Validación de campos requeridos
+      var isValid = true;
+      $('#demo-form input, #demo-form textarea').removeClass('is-invalid'); // Limpiar clase de error
+
+      if (!name) {
+        $('#name').addClass('is-invalid');
+        isValid = false;
+      }
+      if (!email) {
+        $('#email').addClass('is-invalid');
+        isValid = false;
+      }
+      if (!company) {
+        $('#company').addClass('is-invalid');
+        isValid = false;
+      }
+
+      if (isValid) {
+        // Mostrar mensaje flotante de éxito
+        $('#success-message').fadeIn();
+
+        // Ocultar el mensaje flotante después de 4 segundos
+        setTimeout(function() {
+          $('#success-message').fadeOut();
+        }, 4000);
+
+        // Cerrar el modal
+        $('#demoModal').modal('hide');
+
+        // Enviar los datos al servidor a través de EmailJS
+        var formData = {
+          name: name,
+          email: email,
+          company: company,
+          comments: comments,
+          productName: productName,
+          productPrice: productPrice
+        };
+
+        emailjs.send("elianisai12096@gmail.com", "template-t9k4yvb", formData)
+          .then(function(response) {
+            console.log('Correo enviado:', response);
+          }, function(error) {
+            console.log('Error al enviar el correo:', error);
+          });
+      } else {
+        // Mostrar mensaje de error en el modal
+        $('#demo-message').removeClass('d-none').addClass('alert-danger').text('Por favor, completa todos los campos requeridos.');
+      }
+    });
+  </script>
+
+  <!-- Footer -->
+  <div class="page-footer-section bg-dark fg-white">
+    <div class="container">
+      <div class="row mb-5 py-3">
+        <div class="col-sm-6 col-lg-2 py-3">
+          <h5 class="mb-3">Empresa</h5>
+          <ul class="menu-link">
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="https://sistemadefacturacion2024.blogspot.com/">Blog online</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 py-3">
+          <h5 class="mb-3">Contáctanos</h5>
+          <ul class="menu-link">
+            <li><a href="#">Zacatecoluca</a></li>
+            <li><a href="mailto:resourcesacountify@gmail.com">resourcesacountify@gmail.com</a></li>
+            <li><a href="tel:+50375324732">+503 7532-4732</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-4 py-3">
+          <h5 class="mb-3">Subscríbete</h5>
+          <p>Recibe ofertas, noticias o actualizaciones de las funciones del software</p>
+          <form method="POST">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Tu correo electrónico">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="submit">Suscribirse</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
